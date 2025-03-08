@@ -18,11 +18,11 @@ module tt_um_addon (
 
   // All output pins must be assigned. If not used, assign to 0.
   //assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
-    assign uo_out[0]=ui_in[0] ^ ui_in[1]; //sum logic
-    assign uo_out[1]=ui_in[0] & ui_in[1]; //carry
-    assign uo_out[7:2]=6'b0  //here ee pins ll 0 koduthath ath verthe vechal power consume akum
-  assign uio_out = 0;
-  assign uio_oe  = 0;
+    assign uo_out[0]=ui_in[0] ^ ui_in[1]; 
+    assign uo_out[1]=ui_in[0] & ui_in[1]; 
+    assign uo_out[7:2]=6'b0;
+    assign uio_out = 0;
+    assign uio_oe  = 0;
 
   // List all unused inputs to prevent warnings
   wire _unused = &{ena, clk, rst_n, 1'b0};
