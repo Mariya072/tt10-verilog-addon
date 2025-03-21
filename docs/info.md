@@ -8,13 +8,12 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## How it works
-
-Explain how your project works
+This project implements a 4x4 Wallace Tree Multiplier using Half Adders and Full Adders to efficiently compute the product of two 4-bit binary numbers.
 
 ## How to test
-
-Explain how to use your project
+1. Apply two 4-bit inputs (A and B).
+2. Observe the 8-bit product output.
+3. Verify using testbench in simulation.
 
 ## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+No external hardware is required.
